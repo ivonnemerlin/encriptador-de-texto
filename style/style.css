@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: #F3F5FC;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+/* SECTION ONE */
+
+.logo img{
+    width: 31px;
+    margin: 40px;
+}
+
+/* SECTION TWO */
+
+.texto-input{
+    margin-top: 168px;
+}
+
+.texto-input textarea{
+    position: absolute;
+    width: 680px;
+    height: 315px; 
+    border: none;
+    resize: none;
+    background-color: transparent;
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.warning-container{
+    margin-top: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 12px;
+    color: #495057;
+}
+
+.warning-container img{
+    width: 14px;
+    height: 14px;
+}
+
+/* BUTTONS */
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.encriptar-container{
+    color: white; 
+    background-color: #0A3871;
+    width: 328px;
+    border-radius: 24px;
+    padding: 24px;
+    border: none;
+}
+
+.desencriptar-container{
+    width: 328px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+/* SECTION TREE */
+
+.texto-output{
+    width: 400px;
+    margin: 40px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    text-align: center;
+    padding: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);;
+}
+
+/* BEFORE CONTAINER */
+
+.before-container img{
+    width: 336px;
+    object-fit: cover;
+    margin-top: 68px;
+}
+
+.before-container .texto{
+    font-size: 24px;
+    line-height: 28.8px;
+    margin-top: 32px;
+    color: #343A40;
+}
+
+.before-container p{
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #495057;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* AFTER CONTAINER */
+
+.after-container textarea{
+    width: 336px;
+    height: 440px; 
+    border: none;
+    resize: none;
+    background-color: transparent;
+    color: #495057;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.copiar-button button{
+    width: 336px;
+    background: #ffffff;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    margin-top: 32px;
+}
+
+/* FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 12px;
+    color: #495057;
+    font-size: 12px;
+}
+
+.enlaces{
+    margin: 10px 0px 15px 0px;
+}
+
+.enlaces a{
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid #0A3871;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px 25px;
+    color: #343A40;
+}
+
+footer p{
+    color: #495057;
+}
+
+/* TABLET */
+
+@media screen and (max-width: 800px){
+    
+    body{
+        justify-content: left;
+        gap:20px;    
+}
+
+.texto-input{
+    margin-top: 40px;
+}
+
+.texto-input .texto{
+    margin-left: 40px;
+}
+
+.texto-input .warning-container, .buttons{
+    margin-left: 40px;
+}
+
+.texto-output img{
+    display: none;
+}
+
+.after-container textarea{
+    width: 624px;
+}
+
+.texto-output{
+    width: 688px;
+}
+
+.copiar-button button{
+    min-width: 255px;
+}
+
+footer{
+    margin-left: 40px;
+}
+
+.enlaces a{
+    font-size: 10px;
+    margin: 5px; 
+}
+
+}
+
+/* CELULAR */
+
+@media screen and (max-width: 450px){
+    
+    .texto-input textarea{
+        width: 320px;
+    }
+    
+    .texto-output .texto{
+        width: 263px;
+        margin: 0;
+    }
+    
+    .texto-output{
+        width: 320px;        
+    }
+    
+    .after-container textarea{
+        width: 250px;        
+    }
+    
+    .copiar-button button{
+        width: 255px;
+    }
+    
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enlaces a{
+        font-size: 10px;        
+        padding: 10px ;
+    }
+}

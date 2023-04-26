@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.svg" sizes="width">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <nav class="logo"><img src="img/logo.png" alt="alura"></nav>
+    </header>
+    <section class="texto-input two">
+        <div class="texto">
+            <textarea placeholder="Ingrese el texto aquí" id="input-text"></textarea>
+        </div>
+        <div class="warning-container">
+            <img src="img/Vector-warning.png" alt="Advertencia">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="buttons">
+            <button class="encriptar-container" id="btn-encriptar" >Encriptar</button>
+            <button class="desencriptar-container" id="btn-desencriptar">Desencriptar</button>
+        </div>
+</section>
+<section class="texto-output">
+    <div class="before-container" id="before">
+        <div class="before-img">
+            <img src="img/Muñeco.png" alt="Encriptar, desencriptar">
+        </div>
+        <div class="texto">
+            <b>Ningún mensaje fue encontrado.</b>
+            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+    </div>
+    <div class="after-container" id="after">
+        <div class="output-msg">
+            <textarea id="output-text"></textarea>
+        </div>
+        <div class="copiar-button">
+            <button class="copiar" id="btn-copiar">Copiar</button>
+        </div>
+    </div>
+</section>
+    <footer>
+        <p>Encriptador de texto - Alura Challenges Programa ONE: ORACLE NEXT EDUCATION G5</p>
+        <div class="enlaces">
+            <a target="_blank" href="https://www.linkedin.com/in/ivonne-merlin/">LinkedIn</a>
+            <a target="_blank" href="https://www.behance.net/Ivonne_Merlin">Behance</a>
+            <a target="_blank" href="https://www.instagram.com/meruu_rin/">Instagram</a>
+            <a target="_blank" href="https://github.com/ivonnemerlin">Github</a>
+            <a target="_blank" href="mailto:ivonnemerlin22@gmail.com">ivonnemerlin22@gmail.com</a>
+        </div>
+        <b>© Ivonne Merlin | 2023</b>
+    </footer>
+    <script src="code/code.js"></script>
+</body>
+</html>
